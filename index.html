@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment  Six</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .active{
+            background-color: #EF4444;
+            color: #fff;
+        }
+        .active:hover{
+            background-color: #EF4444;
+            color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container mx-auto px-4 py-5 flex justify-between gap-4 border-b-2 border-gray-100">
+                <div class="logo">
+                    <img src="img/Logo.png" alt="">
+                </div>
+                <div class="button">
+                    <button class="btn">
+                        <select name="" id="shorted-views">
+                            <option value="1">Select Options</option>
+                            <option value="short-by-views">Short By Views</option>
+                        </select>
+                    </button>
+                </div>
+                <div class="blog">
+                    <a href="blog.html"><button class="btn px-10 bg-red-500 text-white">Blog</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container m-auto px-4">
+            <!-- Category Item  -->
+            <div id="category-list" class="flex lg:flex-row md:flex-row justify-center flex-col gap-5 my-12 lg:ml-10">
+                <button class="btn px-10 active" data-category="1000">All</button>
+                <button class="btn px-10" data-category="1001">Music</button>
+                <button class="btn px-10" data-category="1003">Comedy</button>
+                <button class="btn px-10" data-category="1005">Drawing</button>
+            </div>
+            <!-- Tube card Features -->
+            <div id="tube-item" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
